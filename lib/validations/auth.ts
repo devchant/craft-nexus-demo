@@ -6,6 +6,7 @@ export const signupSchema = z.object({
   phone: z.string().min(10, "Valid phone number required"),
   craftCategory: z.string().min(1, "Please select a craft"),
   bio: z.string().min(10, "Bio must be at least 10 characters"),
+  businessName: z.string().optional(),
   location: z.string().min(2, "Location is required"),
   password: z.string().min(8, "Password must be at least 8 characters"),
   confirmPassword: z.string()
