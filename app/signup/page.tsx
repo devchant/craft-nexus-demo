@@ -11,6 +11,7 @@ export default function SignupPage() {
     resolver: zodResolver(signupSchema),
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = (data: any) => {
     console.log("Form Data:", data);
   };
@@ -121,6 +122,7 @@ export default function SignupPage() {
 }
 
 // Reusable Input Component
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Input = ({ label, error, ...props }: any) => (
   <div className="flex flex-col w-full">
     <label className="text-[13px] font-semibold text-[#1A1A1A] mb-1.5 ml-1">{label}</label>

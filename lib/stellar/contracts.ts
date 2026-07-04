@@ -151,7 +151,6 @@ export class EscrowContractService {
   /**
    * Create escrow for an order
    */
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async createEscrow(params: ContractEscrowParams): Promise<string> {
     if (!ESCROW_CONTRACT_ADDRESS) {
       throw new Error("Escrow contract not deployed");
